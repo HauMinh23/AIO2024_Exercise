@@ -1,3 +1,4 @@
+
 import streamlit as st
 
 st.title("MY PROJECT")
@@ -31,10 +32,13 @@ st.write(r'$ \sqrt{2x+2} $')
 #     print(data)
 # """, language="python")
 
+
 def get_user_name():
-     return 'Thai'
+    return 'Thai'
+
+
 with st.echo():
-     st.write('This code will be printed')
+    st.write('This code will be printed')
 #     def get_email():
 #         return 'thai@gmail.com'
 #     user_name = get_user_name()
@@ -110,8 +114,8 @@ st.write("The current movie title is", title)
 
 messages = st.container(height=200)
 if prompt := st.chat_input("Say something"):
-     messages.chat_message("user").write(prompt)
-     messages.chat_message("assistant").write(f"Echo: {prompt}")
+    messages.chat_message("user").write(prompt)
+    messages.chat_message("assistant").write(f"Echo: {prompt}")
 
 
 st.divider()
